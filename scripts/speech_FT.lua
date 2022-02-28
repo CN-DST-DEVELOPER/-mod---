@@ -8,66 +8,55 @@
 	"Like \"this\"."
 ]]
 return {
-	ACTIONFAIL =
-	{
-		SHAVE =
-		{
+	ACTIONFAIL = {
+		SHAVE = {
 			AWAKEBEEFALO = "I'm not going to try that while he's awake.",
 			GENERIC = "I can't shave that!",
-			NOBITS = "There isn't even any stubble left!",
+			NOBITS = "There isn't even any stubble left!"
 		},
-		STORE =
-		{
+		STORE = {
 			GENERIC = "It's full.",
 			NOTALLOWED = "That can't go in there.",
-			INUSE = "I should wait my turn.",
+			INUSE = "I should wait my turn."
 		},
-		RUMMAGE =
-		{	
+		RUMMAGE = {
 			GENERIC = "I can't do that.",
-			INUSE = "I should wait my turn.",	
+			INUSE = "I should wait my turn."
 		},
-        COOK =
-        {
-            GENERIC = "I can't do that.",
-            INUSE = "I should wait my turn.",
-            TOOFAR = "It's too far away!",
-        },
-        GIVE =
-        {
-            DEAD = "Maybe I'll just hold on to this.",
-            SLEEPING = "Too unconscious to care.",
-            BUSY = "I'll try again in a second.",
-        },
-        GIVETOPLAYER = 
-        {
-        	FULL = "Their pockets are too full!",
-            DEAD = "Maybe I'll just hold on to this.",
-            SLEEPING = "Too unconscious to care.",
-            BUSY = "I'll try again in a second.",
-    	},
-    	GIVEALLTOPLAYER = 
-        {
-        	FULL = "Their pockets are too full!",
-            DEAD = "Maybe I'll just hold on to this.",
-            SLEEPING = "Too unconscious to care.",
-            BUSY = "I'll try again in a second.",
-    	},
-        WRITE =
-        {
-            GENERIC = "I can't do that.",
-            INUSE = "There's only room for one scribbler.",
-        },
-        CHANGEIN =
-        {
-            GENERIC = "I can't do that.",
-            BURNING = "It's too dangerous right now!",
-            INUSE = "It can only handle one style change at a time.",
-        },
-        ATTUNE =
-        {
-            NOHEALTH = "I don't feel well enough.",
-        },
+		COOK = {
+			GENERIC = "I can't do that.",
+			INUSE = "I should wait my turn.",
+			TOOFAR = "It's too far away!"
+		},
+		GIVE = {
+			DEAD = "Maybe I'll just hold on to this.",
+			SLEEPING = "Too unconscious to care.",
+			BUSY = "I'll try again in a second."
+		},
+		GIVETOPLAYER = {
+			FULL = "Their pockets are too full!",
+			DEAD = "Maybe I'll just hold on to this.",
+			SLEEPING = "Too unconscious to care.",
+			BUSY = "I'll try again in a second."
+		},
+		GIVEALLTOPLAYER = {
+			FULL = "Their pockets are too full!",
+			DEAD = "Maybe I'll just hold on to this.",
+			SLEEPING = "Too unconscious to care.",
+			BUSY = "I'll try again in a second."
+		},
+		WRITE = {
+			GENERIC = "I can't do that.",
+			INUSE = "There's only room for one scribbler."
+		},
+		CHANGEIN = {
+			GENERIC = "I can't do that.",
+			BURNING = "It's too dangerous right now!",
+			INUSE = "It can only handle one style change at a time."
+		},
+		ATTUNE = {
+			NOHEALTH = "I don't feel well enough."
+		}
 	},
 	ACTIONFAIL_GENERIC = "I can't do that.",
 	ANNOUNCE_ADVENTUREFAIL = "That didn't go well. I'll have to try again.",
@@ -80,14 +69,13 @@ return {
 	ANNOUNCE_CRAFTING_FAIL = "I don't have all of the ingredients.",
 	ANNOUNCE_DEERCLOPS = "That sounded big!",
 	ANNOUNCE_DUSK = "It's getting late. It will be dark soon.",
-	ANNOUNCE_EAT =
-	{
+	ANNOUNCE_EAT = {
 		GENERIC = "Yum!",
 		PAINFUL = "I don't feel so good.",
 		SPOILED = "Yuck! That was terrible!",
 		STALE = "I think that was starting to turn.",
 		INVALID = "I can't eat that!",
-		YUCKY = "Puting that in my mouth would be disgusting!",
+		YUCKY = "Puting that in my mouth would be disgusting!"
 	},
 	ANNOUNCE_ENTER_DARK = "It's so dark!",
 	ANNOUNCE_ENTER_LIGHT = "I can see again!",
@@ -103,8 +91,8 @@ return {
 	ANNOUNCE_KNOCKEDOUT = "Ugh, my head!",
 	ANNOUNCE_LOWRESEARCH = "I didn't learn very much from that.",
 	ANNOUNCE_MOSQUITOS = "Aaah! Bug off!",
-    ANNOUNCE_NOWARDROBEONFIRE = "It's too dangerous right now!",
-    ANNOUNCE_NODANGERGIFT = "It's too dangerous right now!",
+	ANNOUNCE_NOWARDROBEONFIRE = "It's too dangerous right now!",
+	ANNOUNCE_NODANGERGIFT = "It's too dangerous right now!",
 	ANNOUNCE_NODANGERSLEEP = "It's too dangerous right now!",
 	ANNOUNCE_NODAYSLEEP = "It's too bright out.",
 	ANNOUNCE_NODAYSLEEP_CAVE = "I'm not tired.",
@@ -124,174 +112,147 @@ return {
 	ANNOUNCE_BURNT = "Yikes! That was hot!",
 	ANNOUNCE_TORCH_OUT = "My light just ran out!",
 	ANNOUNCE_FAN_OUT = "My fan is gone with the wind.",
-    ANNOUNCE_COMPASS_OUT = "This compass doesn't point anymore.",
+	ANNOUNCE_COMPASS_OUT = "This compass doesn't point anymore.",
 	ANNOUNCE_TRAP_WENT_OFF = "Oops.",
 	ANNOUNCE_UNIMPLEMENTED = "OW! I don't think it's ready yet.",
 	ANNOUNCE_WORMHOLE = "That was not a sane thing to do.",
 	ANNOUNCE_CANFIX = "\nI think I can fix this!",
 	ANNOUNCE_ACCOMPLISHMENT = "I feel so accomplished!",
-	ANNOUNCE_ACCOMPLISHMENT_DONE = "If only my friends could see me now...",	
+	ANNOUNCE_ACCOMPLISHMENT_DONE = "If only my friends could see me now...",
 	ANNOUNCE_INSUFFICIENTFERTILIZER = "Are you still hungry, plant?",
 	ANNOUNCE_TOOL_SLIP = "Wow that tool is slippery!",
 	ANNOUNCE_LIGHTNING_DAMAGE_AVOIDED = "Safe from that frightening lightning!",
-
 	ANNOUNCE_DAMP = "Oh, H2O.",
 	ANNOUNCE_WET = "My clothes appear to be permeable.",
 	ANNOUNCE_WETTER = "Water way to go!",
 	ANNOUNCE_SOAKED = "I've nearly reached my saturation point.",
-	
 	ANNOUNCE_BECOMEGHOST = "ooOOoooOOOoOooo!!",
 	ANNOUNCE_GHOSTDRAIN = "My humanity is about to start slipping away...",
-
 	DESCRIBE_SAMECHARACTER = "Is that a mirror?",
-	
-	BATTLECRY =
-	{
+	BATTLECRY = {
 		GENERIC = "Go for the eyes!",
 		PIG = "Here piggy piggy!",
 		PREY = "I will destroy you!",
 		SPIDER = "I'm going to stomp you dead!",
-		SPIDER_WARRIOR = "Better you than me!",
+		SPIDER_WARRIOR = "Better you than me!"
 	},
-	COMBAT_QUIT =
-	{
+	COMBAT_QUIT = {
 		GENERIC = "I sure showed him!",
 		PIG = "I'll let him go. This time.",
 		PREY = "He's too fast!",
 		SPIDER = "He's too gross, anyway.",
-		SPIDER_WARRIOR = "Shoo, you nasty thing!",
+		SPIDER_WARRIOR = "Shoo, you nasty thing!"
 	},
-	DESCRIBE =
-	{
-
-		BERNIE_INACTIVE =
-		{
+	DESCRIBE = {
+		BERNIE_INACTIVE = {
 			BROKEN = "It finally fell apart.",
-			GENERIC = "It's all scorched.",
+			GENERIC = "It's all scorched."
 		},
 		BERNIE_ACTIVE = "That teddy bear is moving around. Interesting.",
-		
-
-        PLAYER =
-        {
-            GENERIC = "It's %s!",
-            ATTACKER = "That %s looks shifty...",
-            MURDERER = "Murderer!",
-            REVIVER = "%s, friend of ghosts.",
-            GHOST = "%s could use a heart.",
-        },
-		WILSON = 
-		{
+		PLAYER = {
+			GENERIC = "It's %s!",
+			ATTACKER = "That %s looks shifty...",
+			MURDERER = "Murderer!",
+			REVIVER = "%s, friend of ghosts.",
+			GHOST = "%s could use a heart."
+		},
+		WILSON = {
 			GENERIC = "It's Wilson!",
 			ATTACKER = "That Wilson looks shifty...",
 			MURDERER = "Murderer!",
 			REVIVER = "Wilson, friend of ghosts.",
-			GHOST = "Wilson could use a heart.",
+			GHOST = "Wilson could use a heart."
 		},
-		WOLFGANG = 
-		{
+		WOLFGANG = {
 			GENERIC = "It's Wolfgang!",
 			ATTACKER = "That Wolfgang looks shifty...",
 			MURDERER = "Murderer!",
 			REVIVER = "Wolfgang, friend of ghosts.",
-			GHOST = "Wolfgang could use a heart.",
+			GHOST = "Wolfgang could use a heart."
 		},
-		WAXWELL = 
-		{
+		WAXWELL = {
 			GENERIC = "It's Maxwell!",
 			ATTACKER = "That Maxwell looks shifty...",
 			MURDERER = "Murderer!",
 			REVIVER = "Maxwell, friend of ghosts.",
-			GHOST = "Maxwell could use a heart.",
+			GHOST = "Maxwell could use a heart."
 		},
-		WX78 = 
-		{
+		WX78 = {
 			GENERIC = "It's WX-78!",
 			ATTACKER = "That WX-78 looks shifty...",
 			MURDERER = "Murderer!",
 			REVIVER = "WX-78, friend of ghosts.",
-			GHOST = "WX-78 could use a heart.",
+			GHOST = "WX-78 could use a heart."
 		},
-		WILLOW = 
-		{
+		WILLOW = {
 			GENERIC = "It's Willow!",
 			ATTACKER = "That Willow looks shifty...",
 			MURDERER = "Murderer!",
 			REVIVER = "Willow, friend of ghosts.",
-			GHOST = "Willow could use a heart.",
+			GHOST = "Willow could use a heart."
 		},
-		WENDY = 
-		{
+		WENDY = {
 			GENERIC = "It's Wendy!",
 			ATTACKER = "That Wendy looks shifty...",
 			MURDERER = "Murderer!",
 			REVIVER = "Wendy, friend of ghosts.",
-			GHOST = "Wendy could use a heart.",
+			GHOST = "Wendy could use a heart."
 		},
-		WOODIE = 
-		{
+		WOODIE = {
 			GENERIC = "It's Woodie!",
 			ATTACKER = "That Woodie looks shifty...",
 			MURDERER = "Murderer!",
 			REVIVER = "Woodie, friend of ghosts.",
-			GHOST = "Woodie could use a heart.",
+			GHOST = "Woodie could use a heart."
 		},
-		WICKERBOTTOM = 
-		{
+		WICKERBOTTOM = {
 			GENERIC = "It's Wickerbottom!",
 			ATTACKER = "That Wickerbottom looks shifty...",
 			MURDERER = "Murderer!",
 			REVIVER = "Wickerbottom, friend of ghosts.",
-			GHOST = "Wickerbottom could use a heart.",
+			GHOST = "Wickerbottom could use a heart."
 		},
-		WES = 
-		{
+		WES = {
 			GENERIC = "It's Wes!",
 			ATTACKER = "That Wes looks shifty...",
 			MURDERER = "Murderer!",
 			REVIVER = "Wes, friend of ghosts.",
-			GHOST = "Wes could use a heart.",
+			GHOST = "Wes could use a heart."
 		},
 		MULTIPLAYER_PORTAL = "It's rickety, but it appears to function. After a fashion...",
-        MIGRATION_PORTAL = {
-            GENERIC = "If I had any friends, this could take me to them.",
-            OPEN = "If I step through, will I still be me?",
-            FULL = "It seems to be popular over there.",
-        },
+		MIGRATION_PORTAL = {
+			GENERIC = "If I had any friends, this could take me to them.",
+			OPEN = "If I step through, will I still be me?",
+			FULL = "It seems to be popular over there."
+		},
 		GLOMMER = "It's cute, in a gross kind of way.",
-		GLOMMERFLOWER = 
-		{
+		GLOMMERFLOWER = {
 			GENERIC = "The petals shimmer in the light.",
-			DEAD = "The petals droop and shimmer in the light.",
+			DEAD = "The petals droop and shimmer in the light."
 		},
 		GLOMMERWINGS = "These would look awesome on a helmet!",
 		GLOMMERFUEL = "This goop smells foul.",
 		BELL = "Dingalingaling.",
-		STATUEGLOMMER = 
-		{	
+		STATUEGLOMMER = {
 			GENERIC = "I'm not sure what that's supposed to be.",
-			EMPTY = "I broke it. For science.",
+			EMPTY = "I broke it. For science."
 		},
-
 		WEBBERSKULL = "Poor little guy. He deserves a proper funeral.",
 		WORMLIGHT = "Looks delicious.",
 		WORMLIGHT_LESSER = "Kinda wrinkled.",
-		WORM =
-		{
-		    PLANT = "Seems safe to me.",
-		    DIRT = "Just looks like a pile of dirt.",
-		    WORM = "It's a worm!",
+		WORM = {
+			PLANT = "Seems safe to me.",
+			DIRT = "Just looks like a pile of dirt.",
+			WORM = "It's a worm!"
 		},
-        WORMLIGHT_PLANT = "Seems safe to me.",
-		MOLE =
-		{
+		WORMLIGHT_PLANT = "Seems safe to me.",
+		MOLE = {
 			HELD = "Nowhere left to dig, my friend.",
 			UNDERGROUND = "Something's under there, searching for minerals.",
-			ABOVEGROUND = "I'd sure like to whack that mole... thing.",
+			ABOVEGROUND = "I'd sure like to whack that mole... thing."
 		},
 		MOLEHILL = "What a nice hole in the ground for a home!",
 		MOLEHAT = "A wretched stench but excellent visibility.",
-
 		EEL = "This will make a delicious meal.",
 		EEL_COOKED = "Smells great!",
 		UNAGI = "I cooked it myself!",
@@ -303,20 +264,18 @@ return {
 		POND_ALGAE = "Some algae by a pond.",
 		GREENSTAFF = "This will come in handy.",
 		POTTEDFERN = "A fern in a pot.",
-
 		THULECITE = "I wonder where this is from?",
 		ARMORRUINS = "It's oddly light.",
 		RUINS_BAT = "It has quite a heft to it.",
 		RUINSHAT = "Fit for a king. Or me.",
-		NIGHTMARE_TIMEPIECE =
-		{
-            CALM = "All is well.",
-            WARN = "Getting pretty magical around here.",
-            WAXING = "I think it's becoming more concentrated!",
-            STEADY = "It seems to be staying steady.",
-            WANING = "Feels like it's receding.",
-            DAWN = "The nightmare is almost gone!",
-            NOMAGIC = "There's no magic around here.",
+		NIGHTMARE_TIMEPIECE = {
+			CALM = "All is well.",
+			WARN = "Getting pretty magical around here.",
+			WAXING = "I think it's becoming more concentrated!",
+			STEADY = "It seems to be staying steady.",
+			WANING = "Feels like it's receding.",
+			DAWN = "The nightmare is almost gone!",
+			NOMAGIC = "There's no magic around here."
 		},
 		BISHOP_NIGHTMARE = "It's falling apart!",
 		ROOK_NIGHTMARE = "Terrifying!",
@@ -332,8 +291,7 @@ return {
 		ORANGESTAFF = "This beats walking.",
 		YELLOWAMULET = "Warm to the touch.",
 		GREENAMULET = "Just when I thought I couldn't get any better.",
-		SLURPERPELT = "Doesn't look much different dead.",	
-
+		SLURPERPELT = "Doesn't look much different dead.",
 		SLURPER = "It's so hairy!",
 		SLURPER_PELT = "Doesn't look much different dead.",
 		ARMORSLURPER = "A soggy, sustaining, succulent suit.",
@@ -341,35 +299,26 @@ return {
 		YELLOWSTAFF = "I put a gem on a stick.",
 		YELLOWGEM = "This gem is yellow.",
 		ORANGEGEM = "It's an orange gem.",
-		TELEBASE = 
-		{
+		TELEBASE = {
 			VALID = "It's ready to go.",
-			GEMS = "It needs more purple gems.",
+			GEMS = "It needs more purple gems."
 		},
-		GEMSOCKET = 
-		{
+		GEMSOCKET = {
 			VALID = "Looks ready.",
-			GEMS = "It needs a gem.",
+			GEMS = "It needs a gem."
 		},
 		STAFFLIGHT = "That seems really dangerous.",
-	
-        ANCIENT_ALTAR = "An ancient and mysterious structure.",
-
-        ANCIENT_ALTAR_BROKEN = "This seems to be broken.",
-
-        ANCIENT_STATUE = "It seems to throb out of tune with the world.",
-
-        LICHEN = "Only a cyanobacteria could grow in this light.",
+		ANCIENT_ALTAR = "An ancient and mysterious structure.",
+		ANCIENT_ALTAR_BROKEN = "This seems to be broken.",
+		ANCIENT_STATUE = "It seems to throb out of tune with the world.",
+		LICHEN = "Only a cyanobacteria could grow in this light.",
 		CUTLICHEN = "Nutritious, but it won't last long.",
-
 		CAVE_BANANA = "It's mushy.",
 		CAVE_BANANA_COOKED = "Yum!",
 		CAVE_BANANA_TREE = "It's dubiously photosynthetical.",
 		ROCKY = "It has terrifying claws.",
-		
-		COMPASS =
-		{
-			GENERIC="Which way am I facing?",
+		COMPASS = {
+			GENERIC = "Which way am I facing?",
 			N = "North",
 			S = "South",
 			E = "East",
@@ -377,78 +326,74 @@ return {
 			NE = "Northeast",
 			SE = "Southeast",
 			NW = "Northwest",
-			SW = "Southwest",
+			SW = "Southwest"
 		},
-
-		NIGHTMARE_TIMEPIECE =	-- Duplicated
-		{
+		NIGHTMARE_TIMEPIECE = {
+			-- Duplicated
 			WAXING = "I think it's becoming more concentrated!",
 			STEADY = "It seems to be staying steady.",
 			WANING = "Feels like it's receding.",
 			DAWN = "The nightmare is almost gone!",
 			WARN = "Getting pretty magical around here.",
 			CALM = "All is well.",
-			NOMAGIC = "There's no magic around here.",
+			NOMAGIC = "There's no magic around here."
 		},
-
-		HOUNDSTOOTH="It's sharp!",
-		ARMORSNURTLESHELL="It sticks to my back.",
-		BAT="Ack! That's terrifying!",
+		HOUNDSTOOTH = "It's sharp!",
+		ARMORSNURTLESHELL = "It sticks to my back.",
+		BAT = "Ack! That's terrifying!",
 		BATBAT = "I wonder if I could fly with two of these.",
-		BATWING="I hate these things, even when they're dead.",
-		BATWING_COOKED="At least it's not coming back.",
-        BATCAVE = "I don't want to wake them.",
-		BEDROLL_FURRY="It's so warm and comfy.",
-		BUNNYMAN="I am filled with an irresitable urge to do science.",
-		FLOWER_CAVE="Science makes it glow.",
-		FLOWER_CAVE_DOUBLE="Science makes it glow.",
-		FLOWER_CAVE_TRIPLE="Science makes it glow.",
-		GUANO="Another flavour of poop.",
-		LANTERN="A more civilized light.",
-		LIGHTBULB="It's strangely tasty looking.",
-		MANRABBIT_TAIL="I just like holding it.",
+		BATWING = "I hate these things, even when they're dead.",
+		BATWING_COOKED = "At least it's not coming back.",
+		BATCAVE = "I don't want to wake them.",
+		BEDROLL_FURRY = "It's so warm and comfy.",
+		BUNNYMAN = "I am filled with an irresitable urge to do science.",
+		FLOWER_CAVE = "Science makes it glow.",
+		FLOWER_CAVE_DOUBLE = "Science makes it glow.",
+		FLOWER_CAVE_TRIPLE = "Science makes it glow.",
+		GUANO = "Another flavour of poop.",
+		LANTERN = "A more civilized light.",
+		LIGHTBULB = "It's strangely tasty looking.",
+		MANRABBIT_TAIL = "I just like holding it.",
 		MUSHTREE_TALL = {
-            GENERIC = "That mushroom got too big for its own good.",
-            BLOOM = "You can't tell by looking, but it's smelly.",
-        },
-		MUSHTREE_MEDIUM = {
-            GENERIC = "These used to grow in my bathroom.",
-            BLOOM = "I'm mildly offended by this.",
-        },
-		MUSHTREE_SMALL = {
-            GENERIC = "A magic mushroom?",
-            BLOOM = "It's trying to reproduce.",
-        },
-        MUSHTREE_TALL_WEBBED = "The spiders thought this one was important.",
-        SPORE_TALL = "It's just drifting around.",
-        SPORE_MEDIUM = "It's just drifting around.",
-        SPORE_SMALL = "It's just drifting around.",
-        SPORE_TALL_INV = "I'll keep a little light in my pocket.",
-        SPORE_MEDIUM_INV = "I'll keep a little light in my pocket.",
-        SPORE_SMALL_INV = "I'll keep a little light in my pocket.",
-		RABBITHOUSE=
-		{
-			GENERIC = "That's not a real carrot.",
-			BURNT = "That's not a real roasted carrot.",
+			GENERIC = "That mushroom got too big for its own good.",
+			BLOOM = "You can't tell by looking, but it's smelly."
 		},
-		SLURTLE="Ew. Just ew.",
-		SLURTLE_SHELLPIECES="A puzzle with no solution.",
-		SLURTLEHAT="I hope it doesn't mess up my hair.",
-		SLURTLEHOLE="A den of 'ew'.",
-		SLURTLESLIME="If it wasn't useful, I wouldn't touch it.",
-		SNURTLE="He's less gross, but still gross.",
-		SPIDER_HIDER="Gah! More spiders!",
-		SPIDER_SPITTER="I hate spiders!",
-		SPIDERHOLE="It's encrusted with old webbing.",
-		STALAGMITE="Looks like a rock to me.",
-		STALAGMITE_FULL="Looks like a rock to me.",
-		STALAGMITE_LOW="Looks like a rock to me.",
-		STALAGMITE_MED="Looks like a rock to me.",
-		STALAGMITE_TALL="Rocks, rocks, rocks, rocks...",
-		STALAGMITE_TALL_FULL="Rocks, rocks, rocks, rocks...",
-		STALAGMITE_TALL_LOW="Rocks, rocks, rocks, rocks...",
-		STALAGMITE_TALL_MED="Rocks, rocks, rocks, rocks...",
-
+		MUSHTREE_MEDIUM = {
+			GENERIC = "These used to grow in my bathroom.",
+			BLOOM = "I'm mildly offended by this."
+		},
+		MUSHTREE_SMALL = {
+			GENERIC = "A magic mushroom?",
+			BLOOM = "It's trying to reproduce."
+		},
+		MUSHTREE_TALL_WEBBED = "The spiders thought this one was important.",
+		SPORE_TALL = "It's just drifting around.",
+		SPORE_MEDIUM = "It's just drifting around.",
+		SPORE_SMALL = "It's just drifting around.",
+		SPORE_TALL_INV = "I'll keep a little light in my pocket.",
+		SPORE_MEDIUM_INV = "I'll keep a little light in my pocket.",
+		SPORE_SMALL_INV = "I'll keep a little light in my pocket.",
+		RABBITHOUSE = {
+			GENERIC = "That's not a real carrot.",
+			BURNT = "That's not a real roasted carrot."
+		},
+		SLURTLE = "Ew. Just ew.",
+		SLURTLE_SHELLPIECES = "A puzzle with no solution.",
+		SLURTLEHAT = "I hope it doesn't mess up my hair.",
+		SLURTLEHOLE = "A den of 'ew'.",
+		SLURTLESLIME = "If it wasn't useful, I wouldn't touch it.",
+		SNURTLE = "He's less gross, but still gross.",
+		SPIDER_HIDER = "Gah! More spiders!",
+		SPIDER_SPITTER = "I hate spiders!",
+		SPIDERHOLE = "It's encrusted with old webbing.",
+		STALAGMITE = "Looks like a rock to me.",
+		STALAGMITE_FULL = "Looks like a rock to me.",
+		STALAGMITE_LOW = "Looks like a rock to me.",
+		STALAGMITE_MED = "Looks like a rock to me.",
+		STALAGMITE_TALL = "Rocks, rocks, rocks, rocks...",
+		STALAGMITE_TALL_FULL = "Rocks, rocks, rocks, rocks...",
+		STALAGMITE_TALL_LOW = "Rocks, rocks, rocks, rocks...",
+		STALAGMITE_TALL_MED = "Rocks, rocks, rocks, rocks...",
 		TURF_CARPETFLOOR = "Yet another ground type.",
 		TURF_CHECKERFLOOR = "Yet another ground type.",
 		TURF_DIRT = "Yet another ground type.",
@@ -459,30 +404,27 @@ return {
 		TURF_ROCKY = "Yet another ground type.",
 		TURF_SAVANNA = "Yet another ground type.",
 		TURF_WOODFLOOR = "Yet another ground type.",
-
-		TURF_CAVE="Yet another ground type.",
-		TURF_FUNGUS="Yet another ground type.",
-		TURF_SINKHOLE="Yet another ground type.",
-		TURF_UNDERROCK="Yet another ground type.",
-		TURF_MUD="Yet another ground type.",
-
+		TURF_CAVE = "Yet another ground type.",
+		TURF_FUNGUS = "Yet another ground type.",
+		TURF_SINKHOLE = "Yet another ground type.",
+		TURF_UNDERROCK = "Yet another ground type.",
+		TURF_MUD = "Yet another ground type.",
 		TURF_DECIDUOUS = "Yet another ground type.",
 		TURF_SANDY = "Yet another ground type.",
 		TURF_BADLANDS = "Yet another ground type.",
-
 		POWCAKE = "I don't know if I'm hungry enough.",
-        CAVE_ENTRANCE = "I wonder if I could move that rock.",
-        CAVE_ENTRANCE_RUINS = "It's probably hiding something.",
-        CAVE_ENTRANCE_OPEN = {
-            GENERIC = "The earth itself rejects me!",
-            OPEN = "I bet there's all sorts of things to discover down there.",
-            FULL = "I'll have to wait until someone leaves.",
-        },
-        CAVE_EXIT = {
-            GENERIC = "I'll just stay down here, I suppose.",
-            OPEN = "I've had enough discovery for now.",
-            FULL = "The surface is too crowded!",
-        },
+		CAVE_ENTRANCE = "I wonder if I could move that rock.",
+		CAVE_ENTRANCE_RUINS = "It's probably hiding something.",
+		CAVE_ENTRANCE_OPEN = {
+			GENERIC = "The earth itself rejects me!",
+			OPEN = "I bet there's all sorts of things to discover down there.",
+			FULL = "I'll have to wait until someone leaves."
+		},
+		CAVE_EXIT = {
+			GENERIC = "I'll just stay down here, I suppose.",
+			OPEN = "I've had enough discovery for now.",
+			FULL = "The surface is too crowded!"
+		},
 		MAXWELLPHONOGRAPH = "So that's where the music was coming from.",
 		BOOMERANG = "Aerodynamical!",
 		PIGGUARD = "He doesn't look as friendly as the others.",
@@ -494,12 +436,11 @@ return {
 		ARMORMARBLE = "This looks really heavy.",
 		ARMORWOOD = "That is a perfectly reasonable piece of clothing.",
 		ARMOR_SANITY = "Wearing this makes me feel safe and insecure.",
-		ASH =
-		{
+		ASH = {
 			GENERIC = "All that's left after fire has done its job.",
 			REMAINS_GLOMMERFLOWER = "The flower was consumed by fire when I teleported!",
 			REMAINS_EYE_BONE = "The eyebone was consumed by fire when I teleported!",
-			REMAINS_THINGIE = "This was once some thing before it got burned...",
+			REMAINS_THINGIE = "This was once some thing before it got burned..."
 		},
 		AXE = "It's my trusty axe.",
 		BABYBEEFALO = "Awwww. So cute!",
@@ -507,33 +448,30 @@ return {
 		BACONEGGS = "I cooked it myself!",
 		BANDAGE = "Seems sterile enough.",
 		BASALT = "That's too strong to break through!",
-		BATBAT = "I bet I could fly if I held two of these.",	-- Duplicated
+		BATBAT = "I bet I could fly if I held two of these.", -- Duplicated
 		BEARDHAIR = "I made them with my face.",
 		BEARGER = "What a bear of a badger.",
 		BEARGERVEST = "Welcome to hibernation station!",
 		ICEPACK = "The fur keeps the temperature inside stable.",
 		BEARGER_FUR = "A mat of thick fur.",
 		BEDROLL_STRAW = "It smells like wet.",
-		BEE =
-		{
+		BEE = {
 			GENERIC = "To bee or not to bee.",
-			HELD = "Careful!",
+			HELD = "Careful!"
 		},
-		BEEBOX =
-		{
+		BEEBOX = {
 			READY = "It's full of honey.",
 			FULLHONEY = "It's full of honey.",
 			GENERIC = "Bees!",
 			NOHONEY = "It's empty.",
 			SOMEHONEY = "I should wait a bit.",
-			BURNT = "How did it get burned?!!",
+			BURNT = "How did it get burned?!!"
 		},
-		BEEFALO =
-		{
+		BEEFALO = {
 			FOLLOWER = "He's coming along peacefully.",
 			GENERIC = "It's a beefalo!",
 			NAKED = "Aww, he's so sad.",
-			SLEEPING = "These guys are really heavy sleepers.",
+			SLEEPING = "These guys are really heavy sleepers."
 		},
 		BEEFALOHAT = "What a nice hat.",
 		BEEFALOWOOL = "It smells like beefalo tears.",
@@ -543,23 +481,21 @@ return {
 		BEEMINE_MAXWELL = "Bottled mosquito rage!",
 		BERRIES = "Red berries taste the best.",
 		BERRIES_COOKED = "I don't think heat improved them.",
-		BERRYBUSH =
-		{
+		BERRYBUSH = {
 			BARREN = "I think it needs to be fertilized.",
 			WITHERED = "Nothing will grow in this heat.",
 			GENERIC = "Red berries taste the best.",
-			PICKED = "Maybe they'll grow back?",
+			PICKED = "Maybe they'll grow back?"
 		},
 		BIGFOOT = "That is one biiig foot.",
-		BIRDCAGE =
-		{
+		BIRDCAGE = {
 			GENERIC = "I should put a bird in it.",
 			OCCUPIED = "That's my bird!",
 			SLEEPING = "Awwww, he's asleep.",
 			HUNGRY = "He's looking a bit peckish.",
 			STARVING = "Did I forget to feed you?",
 			DEAD = "Maybe he's just resting?",
-			SKELETON = "That bird is definitely deceased.",
+			SKELETON = "That bird is definitely deceased."
 		},
 		BIRDTRAP = "Gives me a net advantage!",
 		BIRD_EGG = "A small, normal egg.",
@@ -574,11 +510,10 @@ return {
 		BELL_BLUEPRINT = "It's scientific!",
 		BLUE_CAP = "It's weird and gooey.",
 		BLUE_CAP_COOKED = "It's different now...",
-		BLUE_MUSHROOM =
-		{
+		BLUE_MUSHROOM = {
 			GENERIC = "It's a mushroom.",
 			INGROUND = "It's sleeping.",
-			PICKED = "I wonder if it will come back?",
+			PICKED = "I wonder if it will come back?"
 		},
 		BOARDS = "Boards.",
 		BOAT = "Is that how I got here?",
@@ -587,47 +522,41 @@ return {
 		BUGNET = "For catching bugs.",
 		BUSHHAT = "It's kind of scratchy.",
 		BUTTER = "I can't believe it's butter!",
-		BUTTERFLY =
-		{
+		BUTTERFLY = {
 			GENERIC = "Butterfly, flutter by.",
-			HELD = "Now I have you!",
+			HELD = "Now I have you!"
 		},
 		BUTTERFLYMUFFIN = "I cooked it myself!",
 		BUTTERFLYWINGS = "Without these, it's just a butter.",
 		BUZZARD = "What a bizarre buzzard!",
-		CACTUS = 
-		{
+		CACTUS = {
 			GENERIC = "Sharp but delicious.",
-			PICKED = "Deflated, but still spiny.",
+			PICKED = "Deflated, but still spiny."
 		},
 		CACTUS_MEAT_COOKED = "Grilled fruit of the desert.",
 		CACTUS_MEAT = "There are still some spines between me and a tasty meal.",
 		CACTUS_FLOWER = "A pretty flower from a prickly plant.",
-
-		COLDFIRE =
-		{
+		COLDFIRE = {
 			EMBERS = "I should put something on the fire before it goes out.",
 			GENERIC = "Sure beats darkness.",
 			HIGH = "That fire is getting out of hand!",
 			LOW = "The fire's getting a bit low.",
 			NORMAL = "Nice and comfy.",
-			OUT = "Well, that's over.",
+			OUT = "Well, that's over."
 		},
-		CAMPFIRE =
-		{
+		CAMPFIRE = {
 			EMBERS = "I should put something on the fire before it goes out.",
 			GENERIC = "Sure beats darkness.",
 			HIGH = "That fire is getting out of hand!",
 			LOW = "The fire's getting a bit low.",
 			NORMAL = "Nice and comfy.",
-			OUT = "Well, that's over.",
+			OUT = "Well, that's over."
 		},
 		CANE = "It makes walking seem much easier!",
 		CATCOON = "A playful little thing.",
-		CATCOONDEN = 
-		{
+		CATCOONDEN = {
 			GENERIC = "It's a den in a stump.",
-			EMPTY = "Its owner ran out of lives.",
+			EMPTY = "Its owner ran out of lives."
 		},
 		CATCOONHAT = "Ears hat!",
 		COONTAIL = "I think it's still swishing.",
@@ -638,34 +567,31 @@ return {
 		WATERMELON_SEEDS = "It's a seed.",
 		CAVE_FERN = "It's a fern.",
 		CHARCOAL = "It's small, dark and smells like burnt wood.",
-        CHESSJUNK1 = "A pile of broken chess pieces.",
-        CHESSJUNK2 = "Another pile of broken chess pieces.",
-        CHESSJUNK3 = "Even more broken chess pieces.",
+		CHESSJUNK1 = "A pile of broken chess pieces.",
+		CHESSJUNK2 = "Another pile of broken chess pieces.",
+		CHESSJUNK3 = "Even more broken chess pieces.",
 		CHESTER = "Otto von Chesterfield, Esq.",
-		CHESTER_EYEBONE =
-		{
+		CHESTER_EYEBONE = {
 			GENERIC = "It's looking at me.",
-			WAITING = "It went to sleep.",
+			WAITING = "It went to sleep."
 		},
 		COOKEDMANDRAKE = "Poor little guy.",
 		COOKEDMEAT = "Char broiled to perfection.",
 		COOKEDMONSTERMEAT = "That's only somewhat more appetizing than when it was raw.",
 		COOKEDSMALLMEAT = "Now I don't have to worry about getting worms!",
-		COOKPOT =
-		{
+		COOKPOT = {
 			COOKING_LONG = "This is going to take a while.",
 			COOKING_SHORT = "It's almost done!",
 			DONE = "Mmmmm! It's ready to eat!",
 			EMPTY = "It makes me hungry just to look at it.",
-			BURNT = "The pot got cooked.",
+			BURNT = "The pot got cooked."
 		},
 		CORN = "High in fructose!",
 		CORN_COOKED = "High in fructose!",
 		CORN_SEEDS = "It's a seed.",
-		CROW =
-		{
+		CROW = {
 			GENERIC = "Creepy!",
-			HELD = "He's not very happy in there.",
+			HELD = "He's not very happy in there."
 		},
 		CUTGRASS = "Cut grass, ready for arts and crafts.",
 		CUTREEDS = "Cut reeds, ready for crafting and hobbying.",
@@ -673,58 +599,49 @@ return {
 		DEADLYFEAST = "A most potent dish.",
 		DEERCLOPS = "It's enormous!!",
 		DEERCLOPS_EYEBALL = "This is really gross.",
-		EYEBRELLAHAT =	"It will watch over me.",
-		DEPLETED_GRASS =
-		{
-			GENERIC = "It's probably a tuft of grass.",
+		EYEBRELLAHAT = "It will watch over me.",
+		DEPLETED_GRASS = {
+			GENERIC = "It's probably a tuft of grass."
 		},
 		DEVTOOL = "It smells of bacon!",
 		DEVTOOL_NODEV = "I'm not strong enough to wield it.",
 		DIRTPILE = "It's a pile of dirt... or IS it?",
-		DIVININGROD =
-		{
+		DIVININGROD = {
 			COLD = "The signal is very faint.",
 			GENERIC = "It's some kind of homing device.",
 			HOT = "This thing's going crazy!",
 			WARM = "I'm headed in the right direction.",
-			WARMER = "I must be getting pretty close.",
+			WARMER = "I must be getting pretty close."
 		},
-		DIVININGRODBASE =
-		{
+		DIVININGRODBASE = {
 			GENERIC = "I wonder what it does.",
 			READY = "It looks like it needs a large key.",
-			UNLOCKED = "Now my machine can work!",
+			UNLOCKED = "Now my machine can work!"
 		},
 		DIVININGRODSTART = "That rod looks useful!",
 		DRAGONFLY = "That's one fly dragon!",
 		ARMORDRAGONFLY = "Hot mail!",
 		DRAGON_SCALES = "They're still warm.",
 		DRAGONFLYCHEST = "Next best thing to a lockbox!",
-		LAVASPIT = 
-		{
+		LAVASPIT = {
 			HOT = "Hot spit!",
-			COOL = "I like to call it 'Basaliva'.",
+			COOL = "I like to call it 'Basaliva'."
 		},
-
 		LAVAE = "Too hot to handle.",
-		LAVAE_PET = 
-		{
+		LAVAE_PET = {
 			STARVING = "Poor thing must be starving.",
 			HUNGRY = "I hear a tiny stomach grumbling.",
 			CONTENT = "It seems happy.",
-			GENERIC = "Aww. Who's a good monster?",
+			GENERIC = "Aww. Who's a good monster?"
 		},
-		LAVAE_EGG = 
-		{
-			GENERIC = "I can feel a faint warmth coming from inside.",
+		LAVAE_EGG = {
+			GENERIC = "I can feel a faint warmth coming from inside."
 		},
-		LAVAE_EGG_CRACKED =
-		{
+		LAVAE_EGG_CRACKED = {
 			COLD = "I don't think that egg is warm enough.",
-			COMFY = "I never thought I would see a happy egg.",
+			COMFY = "I never thought I would see a happy egg."
 		},
 		LAVAE_TOOTH = "It's an egg tooth!",
-
 		DRAGONFRUIT = "What a weird fruit.",
 		DRAGONFRUIT_COOKED = "Still weird.",
 		DRAGONFRUIT_SEEDS = "It's a seed.",
@@ -742,77 +659,68 @@ return {
 		EGGPLANT = "It doesn't look like an egg.",
 		EGGPLANT_COOKED = "It's even less eggy.",
 		EGGPLANT_SEEDS = "It's a seed.",
-		DECIDUOUSTREE = 
-		{
+		DECIDUOUSTREE = {
 			BURNING = "What a waste of wood.",
 			BURNT = "I feel like I could have prevented that.",
 			CHOPPED = "Take that, nature!",
 			POISON = "It looks unhappy about me stealing those Birchnuts!",
-			GENERIC = "It's all Leafy. Most of the time.",
+			GENERIC = "It's all Leafy. Most of the time."
 		},
 		ACORN = "There's definitely something inside there.",
-        ACORN_SAPLING = "It'll be a tree soon!",
+		ACORN_SAPLING = "It'll be a tree soon!",
 		ACORN_COOKED = "Roasted to perfection.",
 		BIRCHNUTDRAKE = "A mad little nut.",
-		EVERGREEN =
-		{
+		EVERGREEN = {
 			BURNING = "What a waste of wood.",
 			BURNT = "I feel like I could have prevented that.",
 			CHOPPED = "Take that, nature!",
-			GENERIC = "It's all Piney.",
+			GENERIC = "It's all Piney."
 		},
-		EVERGREEN_SPARSE =
-		{
+		EVERGREEN_SPARSE = {
 			BURNING = "What a waste of wood.",
 			BURNT = "I feel like I could have prevented that.",
 			CHOPPED = "Take that, nature!",
-			GENERIC = "This sad tree has no cones.",
+			GENERIC = "This sad tree has no cones."
 		},
 		EYEPLANT = "I think I'm being watched.",
-		FARMPLOT =
-		{
+		FARMPLOT = {
 			GENERIC = "I should try planting some crops.",
 			GROWING = "Go plants go!",
 			NEEDSFERTILIZER = "I think it needs to be fertilized.",
-			BURNT = "I don't think anything will grow in a pile of ash.",
+			BURNT = "I don't think anything will grow in a pile of ash."
 		},
 		FEATHERHAT = "I AM A BIRD!",
 		FEATHER_CROW = "A crow feather.",
 		FEATHER_ROBIN = "A redbird feather.",
 		FEATHER_ROBIN_WINTER = "A snowbird feather.",
 		FEM_PUPPET = "She's trapped!",
-		FIREFLIES =
-		{
+		FIREFLIES = {
 			GENERIC = "If only I could catch them!",
-			HELD = "They make my pocket glow!",
+			HELD = "They make my pocket glow!"
 		},
 		FIREHOUND = "That one is glowy.",
-		FIREPIT =
-		{
+		FIREPIT = {
 			EMBERS = "I should put something on the fire before it goes out.",
 			GENERIC = "Sure beats darkness.",
 			HIGH = "Good thing it's contained!",
 			LOW = "The fire's getting a bit low.",
 			NORMAL = "Nice and comfy.",
-			OUT = "At least I can start it up again.",
+			OUT = "At least I can start it up again."
 		},
-		COLDFIREPIT =
-		{
+		COLDFIREPIT = {
 			EMBERS = "I should put something on the fire before it goes out.",
 			GENERIC = "Sure beats darkness.",
 			HIGH = "Good thing it's contained!",
 			LOW = "The fire's getting a bit low.",
 			NORMAL = "Nice and comfy.",
-			OUT = "At least I can start it up again.",
+			OUT = "At least I can start it up again."
 		},
 		FIRESTAFF = "I don't want to set the world on fire.",
-		FIRESUPPRESSOR = 
-		{	
+		FIRESUPPRESSOR = {
 			ON = "Fling on!",
 			OFF = "All quiet on the flinging front.",
-			LOWFUEL = "The fuel tank is getting a bit low.",
+			LOWFUEL = "The fuel tank is getting a bit low."
 		},
-
 		FISH = "Now I shall eat for a day.",
 		FISHINGROD = "Hook, line and stick!",
 		FISHSTICKS = "I cooked it myself!",
@@ -820,22 +728,21 @@ return {
 		FISH_COOKED = "Grilled to perfection.",
 		FLINT = "It's a very sharp rock.",
 		FLOWER = "It's pretty but it smells like a common labourer.",
-        FLOWER_WITHERED = "I don't think it got enough sun.",
+		FLOWER_WITHERED = "I don't think it got enough sun.",
 		FLOWERHAT = "It smells like prettiness.",
 		FLOWER_EVIL = "Augh! It's so evil!",
 		FOLIAGE = "Some leafy greens.",
 		FOOTBALLHAT = "I don't like sports.",
-		FROG =
-		{
+		FROG = {
 			DEAD = "He's croaked it.",
 			GENERIC = "He's so cute!",
-			SLEEPING = "Aww, look at him sleep!",
+			SLEEPING = "Aww, look at him sleep!"
 		},
 		FROGGLEBUNWICH = "I cooked it myself!",
 		FROGLEGS = "I've heard it's a delicacy.",
 		FROGLEGS_COOKED = "Tastes like chicken.",
 		FRUITMEDLEY = "I cooked it myself!",
-		FURTUFT = "Black and white fur.", 
+		FURTUFT = "Black and white fur.",
 		GEARS = "A pile of mechanical parts.",
 		GHOST = "That offends me as a Scientist.",
 		GOLDENAXE = "That's one fancy axe.",
@@ -843,52 +750,46 @@ return {
 		GOLDENPITCHFORK = "Why did I even make a pitchfork this fancy?",
 		GOLDENSHOVEL = "I can't wait to dig holes.",
 		GOLDNUGGET = "I can't eat it, but it sure is shiny.",
-		GRASS =
-		{
+		GRASS = {
 			BARREN = "It needs poop.",
 			WITHERED = "It's not going to grow back while it's so hot.",
 			BURNING = "That's burning fast!",
 			GENERIC = "It's a tuft of grass.",
-			PICKED = "It was cut down in the prime of its life.",
+			PICKED = "It was cut down in the prime of its life."
 		},
 		GREEN_CAP = "It seems pretty normal.",
 		GREEN_CAP_COOKED = "It's different now...",
-		GREEN_MUSHROOM =
-		{
+		GREEN_MUSHROOM = {
 			GENERIC = "It's a mushroom.",
 			INGROUND = "It's sleeping.",
-			PICKED = "I wonder if it will come back?",
+			PICKED = "I wonder if it will come back?"
 		},
 		GUNPOWDER = "It looks like pepper.",
 		HAMBAT = "This seems unsanitary.",
 		HAMMER = "Stop! It's time! To hammer things!",
 		HEALINGSALVE = "The stinging means that it's working.",
-		HEATROCK =
-		{
+		HEATROCK = {
 			FROZEN = "It's colder than ice.",
 			COLD = "That's a cold stone.",
 			GENERIC = "I could manipulate its temperature.",
 			WARM = "It's quite warm and cuddly... for a rock!",
-			HOT = "Nice and toasty hot!",
+			HOT = "Nice and toasty hot!"
 		},
 		HOME = "Someone must live here.",
-		HOMESIGN =
-		{
+		HOMESIGN = {
 			GENERIC = "It says 'You are here'.",
-            UNWRITTEN = "The sign is currently blank.",
-			BURNT = "\"Don't play with matches.\"",
+			UNWRITTEN = "The sign is currently blank.",
+			BURNT = '"Don\'t play with matches."'
 		},
-		ARROWSIGN_POST =
-		{
+		ARROWSIGN_POST = {
 			GENERIC = "It says 'Thataway'.",
-            UNWRITTEN = "The sign is currently blank.",
-			BURNT = "\"Don't play with matches.\"",
+			UNWRITTEN = "The sign is currently blank.",
+			BURNT = '"Don\'t play with matches."'
 		},
-		ARROWSIGN_PANEL =
-		{
+		ARROWSIGN_PANEL = {
 			GENERIC = "It says 'Thataway'.",
-            UNWRITTEN = "The sign is currently blank.",
-			BURNT = "\"Don't play with matches.\"",
+			UNWRITTEN = "The sign is currently blank.",
+			BURNT = '"Don\'t play with matches."'
 		},
 		HONEY = "Looks delicious!",
 		HONEYCOMB = "Bees used to live in this.",
@@ -901,17 +802,15 @@ return {
 		ICEBOX = "I have harnessed the power of cold!",
 		ICEHAT = "Stay cool, boy.",
 		ICEHOUND = "Are there hounds for every season?",
-		INSANITYROCK =
-		{
+		INSANITYROCK = {
 			ACTIVE = "TAKE THAT, SANE SELF!",
-			INACTIVE = "It's more of a pyramid than an obelisk.",
+			INACTIVE = "It's more of a pyramid than an obelisk."
 		},
 		JAMMYPRESERVES = "I cooked it myself!",
 		KABOBS = "I cooked it myself!",
-		KILLERBEE =
-		{
+		KILLERBEE = {
 			GENERIC = "Oh no! It's a killer bee!",
-			HELD = "This seems dangerous.",
+			HELD = "This seems dangerous."
 		},
 		KNIGHT = "Check it out!",
 		KOALEFANT_SUMMER = "Adorably delicious.",
@@ -920,52 +819,45 @@ return {
 		KRAMPUS_SACK = "Ew. It has Krampus slime all over it.",
 		LEIF = "He's huge!",
 		LEIF_SPARSE = "He's huge!",
-		LIGHTNING_ROD =
-		{
+		LIGHTNING_ROD = {
 			CHARGED = "The power is mine!",
-			GENERIC = "I can harness the heavens!",
+			GENERIC = "I can harness the heavens!"
 		},
-		LIGHTNINGGOAT = 
-		{
+		LIGHTNINGGOAT = {
 			GENERIC = "'Baaaah' yourself!",
-			CHARGED = "I don't think it liked being struck by lightning.",
+			CHARGED = "I don't think it liked being struck by lightning."
 		},
 		LIGHTNINGGOATHORN = "It's like a miniature lightning rod.",
 		GOATMILK = "It's buzzing with tastiness!",
 		LITTLE_WALRUS = "He won't be cute and cuddly forever.",
 		LIVINGLOG = "It looks worried.",
-		LOG =
-		{
+		LOG = {
 			BURNING = "That's some hot wood!",
-			GENERIC = "It's big, it's heavy, and it's wood.",
+			GENERIC = "It's big, it's heavy, and it's wood."
 		},
 		LUREPLANT = "It's so alluring.",
 		LUREPLANTBULB = "Now I can start my very own meat farm.",
 		MALE_PUPPET = "He's trapped!",
-
 		MANDRAKE_ACTIVE = "Stop following me!",
 		MANDRAKE_PLANTED = "I've heard strange things about those plants.",
 		MANDRAKE = "A mandrake root has strange powers.",
-
 		MANDRAKESOUP = "I cooked it myself!",
 		MANDRAKE_COOKED = "It doesn't seem so strange anymore.",
 		MARBLE = "Fancy!",
 		MARBLEPILLAR = "I think I could use that.",
 		MARBLETREE = "I don't think an axe will cut it.",
-		MARSH_BUSH =
-		{
+		MARSH_BUSH = {
 			BURNING = "That's burning fast!",
 			GENERIC = "It looks thorny.",
-			PICKED = "That hurt.",
+			PICKED = "That hurt."
 		},
 		BURNT_MARSH_BUSH = "It's all burnt up.",
 		MARSH_PLANT = "It's a plant.",
-		MARSH_TREE =
-		{
+		MARSH_TREE = {
 			BURNING = "Spikes and fire!",
 			BURNT = "Now it's burnt and spiky.",
 			CHOPPED = "Not so spiky now!",
-			GENERIC = "Those spikes look sharp!",
+			GENERIC = "Those spikes look sharp!"
 		},
 		MAXWELL = "I hate that guy.",
 		MAXWELLHEAD = "I can see into his pores.",
@@ -974,55 +866,50 @@ return {
 		MAXWELLTHRONE = "That doesn't look very comfortable.",
 		MEAT = "It's a bit gamey, but it'll do.",
 		MEATBALLS = "I cooked it myself!",
-		MEATRACK =
-		{
+		MEATRACK = {
 			DONE = "Jerky time!",
 			DRYING = "Meat takes a while to dry.",
 			DRYINGINRAIN = "Meat takes even longer to dry in rain.",
 			GENERIC = "I should dry some meats.",
-			BURNT = "The rack got dried.",
+			BURNT = "The rack got dried."
 		},
 		MEAT_DRIED = "Just jerky enough.",
 		MERM = "Smells fishy!",
-		MERMHEAD = 
-		{
+		MERMHEAD = {
 			GENERIC = "The stinkiest thing I'll smell all day.",
-			BURNT = "Burnt merm flesh somehow smells even worse.",
+			BURNT = "Burnt merm flesh somehow smells even worse."
 		},
-		MERMHOUSE = 
-		{
+		MERMHOUSE = {
 			GENERIC = "Who would live here?",
-			BURNT = "Nothing to live in, now.",
+			BURNT = "Nothing to live in, now."
 		},
 		MINERHAT = "This will keep my hands free.",
 		MONKEY = "Curious little guy.",
 		MONKEYBARREL = "Did that just move?",
 		MONSTERLASAGNA = "I cooked it myself!",
 		FLOWERSALAD = "A bowl of foliage.",
-        ICECREAM = "I scream for ice cream!",
-        WATERMELONICLE = "Cryogenic watermelon.",
-        TRAILMIX = "A healthy, natural snack.",
-        HOTCHILI = "Five alarm!",
-        GUACAMOLE = "Avogadro's favorite dish.",
+		ICECREAM = "I scream for ice cream!",
+		WATERMELONICLE = "Cryogenic watermelon.",
+		TRAILMIX = "A healthy, natural snack.",
+		HOTCHILI = "Five alarm!",
+		GUACAMOLE = "Avogadro's favorite dish.",
 		MONSTERMEAT = "Ugh. I don't think I should eat that.",
 		MONSTERMEAT_DRIED = "Strange-smelling jerky.",
 		MOOSE = "I don't exactly know what that thing is.",
 		MOOSEEGG = "Its contents are like excited electrons trying to escape.",
 		MOSSLING = "Aaah! You are definitely not an electron!",
 		FEATHERFAN = "Down to bring my temperature down.",
-        MINIFAN = "Somehow the breeze comes out the back twice as fast.",
+		MINIFAN = "Somehow the breeze comes out the back twice as fast.",
 		GOOSE_FEATHER = "Fluffy!",
 		STAFF_TORNADO = "Spinning doom.",
-		MOSQUITO =
-		{
+		MOSQUITO = {
 			GENERIC = "Disgusting little bloodsucker.",
-			HELD = "Hey, is that my blood?",
+			HELD = "Hey, is that my blood?"
 		},
 		MOSQUITOSACK = "It's probably not someone else's blood...",
-		MOUND =
-		{
+		MOUND = {
 			DUG = "I should probably feel bad about that.",
-			GENERIC = "I bet there's all sorts of good stuff down there!",
+			GENERIC = "I bet there's all sorts of good stuff down there!"
 		},
 		NIGHTLIGHT = "It gives off a spooky light.",
 		NIGHTMAREFUEL = "This stuff is crazy!",
@@ -1040,42 +927,38 @@ return {
 		PHLEGM = "It's thick and pliable. And salty.",
 		PICKAXE = "Iconic, isn't it?",
 		PIGGYBACK = "I feel kinda bad for that.",
-		PIGHEAD = 
-		{	
+		PIGHEAD = {
 			GENERIC = "Looks like an offering to the beast.",
-			BURNT = "Crispy.",
+			BURNT = "Crispy."
 		},
-		PIGHOUSE =
-		{
+		PIGHOUSE = {
 			FULL = "I can see a snout pressed up against the window.",
 			GENERIC = "These pigs have pretty fancy houses.",
 			LIGHTSOUT = "Come ON! I know you're home!",
-			BURNT = "Not so fancy now, pig!",
+			BURNT = "Not so fancy now, pig!"
 		},
 		PIGKING = "Ewwww, he smells!",
-		PIGMAN =
-		{
+		PIGMAN = {
 			DEAD = "Someone should tell his family.",
 			FOLLOWER = "He's part of my entourage.",
 			GENERIC = "They kind of creep me out.",
 			GUARD = "He looks serious.",
-			WEREPIG = "He's not friendly!",
+			WEREPIG = "He's not friendly!"
 		},
 		PIGSKIN = "It still has the tail on it.",
 		PIGTENT = "Smells like bacon.",
 		PIGTORCH = "Sure looks cozy.",
 		PINECONE = "I can hear a tiny tree inside it, trying to get out.",
-        PINECONE_SAPLING = "It'll be a tree soon!",
-        LUMPY_SAPLING = "How did this tree even reproduce?",
+		PINECONE_SAPLING = "It'll be a tree soon!",
+		LUMPY_SAPLING = "How did this tree even reproduce?",
 		PITCHFORK = "Maxwell might be looking for this.",
 		PLANTMEAT = "That doesn't look very appealing.",
 		PLANTMEAT_COOKED = "At least it's warm now.",
-		PLANT_NORMAL =
-		{
+		PLANT_NORMAL = {
 			GENERIC = "Leafy!",
 			GROWING = "Guh! It's growing so slowly!",
 			READY = "Mmmm. Ready to harvest.",
-			WITHERED = "The heat killed it.",
+			WITHERED = "The heat killed it."
 		},
 		POMEGRANATE = "It looks like the inside of an alien's brain.",
 		POMEGRANATE_COOKED = "Haute Cuisine!",
@@ -1090,20 +973,17 @@ return {
 		PUMPKIN_SEEDS = "It's a seed.",
 		PURPLEAMULET = "It's whispering to me.",
 		PURPLEGEM = "It contains the mysteries of the universe.",
-		RABBIT =
-		{
+		RABBIT = {
 			GENERIC = "He's looking for carrots.",
-			HELD = "Do you like science?",
+			HELD = "Do you like science?"
 		},
-		RABBITHOLE = 
-		{
+		RABBITHOLE = {
 			GENERIC = "That must lead to the Kingdom of the Bunnymen.",
-			SPRING = "The Kingdom of the Bunnymen is closed for the season.",
+			SPRING = "The Kingdom of the Bunnymen is closed for the season."
 		},
-		RAINOMETER = 
-		{	
+		RAINOMETER = {
 			GENERIC = "It measures cloudiness.",
-			BURNT = "The measuring parts went up in a cloud of smoke.",
+			BURNT = "The measuring parts went up in a cloud of smoke."
 		},
 		RAINCOAT = "Keeps the rain where it ought to be. Outside my body.",
 		RAINHAT = "It'll mess up my hair, but I'll stay nice and dry.",
@@ -1112,91 +992,78 @@ return {
 		REDGEM = "It sparkles with inner warmth.",
 		RED_CAP = "It smells funny.",
 		RED_CAP_COOKED = "It's different now...",
-		RED_MUSHROOM =
-		{
+		RED_MUSHROOM = {
 			GENERIC = "It's a mushroom.",
 			INGROUND = "It's sleeping.",
-			PICKED = "I wonder if it will come back?",
+			PICKED = "I wonder if it will come back?"
 		},
-		REEDS =
-		{
+		REEDS = {
 			BURNING = "That's really burning!",
 			GENERIC = "It's a clump of reeds.",
-			PICKED = "I picked all the useful reeds.",
+			PICKED = "I picked all the useful reeds."
 		},
-        RELIC = 
-        {
-            GENERIC = "Ancient household goods.",
-            BROKEN = "Nothing to work with here.",
-        },
-        RUINS_RUBBLE = "This can be fixed.",
-        RUBBLE = "Just bits and pieces of rock.",
-		RESEARCHLAB = 
-		{	
+		RELIC = {
+			GENERIC = "Ancient household goods.",
+			BROKEN = "Nothing to work with here."
+		},
+		RUINS_RUBBLE = "This can be fixed.",
+		RUBBLE = "Just bits and pieces of rock.",
+		RESEARCHLAB = {
 			GENERIC = "It breaks down objects into their scientific components.",
-			BURNT = "It won't be doing much science now.",
+			BURNT = "It won't be doing much science now."
 		},
-		RESEARCHLAB2 = 
-		{
+		RESEARCHLAB2 = {
 			GENERIC = "It's even more science-y than the last one!",
-			BURNT = "The extra science didn't keep it alive.",
+			BURNT = "The extra science didn't keep it alive."
 		},
-		RESEARCHLAB3 = 
-		{
+		RESEARCHLAB3 = {
 			GENERIC = "What have I created?",
-			BURNT = "Whatever it was, it's burnt now.",
+			BURNT = "Whatever it was, it's burnt now."
 		},
-		RESEARCHLAB4 = 
-		{
+		RESEARCHLAB4 = {
 			GENERIC = "Who would name something that?",
-			BURNT = "Fire doesn't really solve naming issues...",
+			BURNT = "Fire doesn't really solve naming issues..."
 		},
-		RESURRECTIONSTATUE = 
-		{
+		RESURRECTIONSTATUE = {
 			GENERIC = "What a handsome devil!",
-			BURNT = "Not much use anymore.",
-		},		RESURRECTIONSTONE = "Such a touching stone.",
-		ROBIN =
-		{
-			GENERIC = "Does that mean winter is gone?",
-			HELD = "He likes my pocket.",
+			BURNT = "Not much use anymore."
 		},
-		ROBIN_WINTER =
-		{
+		RESURRECTIONSTONE = "Such a touching stone.",
+		ROBIN = {
+			GENERIC = "Does that mean winter is gone?",
+			HELD = "He likes my pocket."
+		},
+		ROBIN_WINTER = {
 			GENERIC = "Life in the frozen wastes.",
-			HELD = "It's so soft.",
+			HELD = "It's so soft."
 		},
 		ROBOT_PUPPET = "It's trapped!",
-		ROCK_LIGHT =
-		{
+		ROCK_LIGHT = {
 			GENERIC = "A crusted over lava pit.",
 			OUT = "Looks fragile.",
 			LOW = "The lava's crusting over.",
-			NORMAL = "Nice and comfy.",
+			NORMAL = "Nice and comfy."
 		},
 		ROCK = "It wouldn't fit in my pocket.",
-		ROCK_ICE = 
-		{
+		ROCK_ICE = {
 			GENERIC = "A very isolated glacier.",
-			MELTED = "Nothing useful until it freezes again.",
+			MELTED = "Nothing useful until it freezes again."
 		},
 		ROCK_ICE_MELTED = "Nothing useful until it freezes again.",
 		ICE = "Ice to meet you.",
 		ROCKS = "I can make stuff with these.",
-        ROOK = "Storm the castle!",
+		ROOK = "Storm the castle!",
 		ROPE = "Some short lengths of rope.",
 		ROTTENEGG = "Ew! It stinks!",
-		SANITYROCK =
-		{
+		SANITYROCK = {
 			ACTIVE = "That's a CRAZY looking rock!",
-			INACTIVE = "Where did the rest of it go?",
+			INACTIVE = "Where did the rest of it go?"
 		},
-		SAPLING =
-		{
+		SAPLING = {
 			BURNING = "That's burning fast!",
 			WITHERED = "It might be okay if it was cooler.",
 			GENERIC = "Baby trees are so cute!",
-			PICKED = "That'll teach him.",
+			PICKED = "That'll teach him."
 		},
 		SEEDS = "Each one is a tiny mystery.",
 		SEEDS_COOKED = "I cooked all the life out of 'em!",
@@ -1206,32 +1073,29 @@ return {
 		SKELETON = "Better him than me.",
 		SCORCHED_SKELETON = "Spooky.",
 		SKULLCHEST = "I'm not sure if I want to open it.",
-		SMALLBIRD =
-		{
+		SMALLBIRD = {
 			GENERIC = "That's a rather small bird.",
 			HUNGRY = "It looks hungry.",
-			STARVING = "It must be starving.",
+			STARVING = "It must be starving."
 		},
 		SMALLMEAT = "A tiny chunk of dead animal.",
 		SMALLMEAT_DRIED = "A little jerky.",
 		SPAT = "What a crusty looking animal.",
 		SPEAR = "That's one pointy stick.",
-		SPIDER =
-		{
+		SPIDER = {
 			DEAD = "Ewwww!",
 			GENERIC = "I hate spiders.",
-			SLEEPING = "I'd better not be here when he wakes up.",
+			SLEEPING = "I'd better not be here when he wakes up."
 		},
 		SPIDERDEN = "Sticky!",
 		SPIDEREGGSACK = "I hope these don't hatch in my pocket.",
 		SPIDERGLAND = "It has a tangy, antiseptic smell.",
 		SPIDERHAT = "I hope I got all of the spider goo out of it.",
 		SPIDERQUEEN = "AHHHHHHHH! That spider is huge!",
-		SPIDER_WARRIOR =
-		{
+		SPIDER_WARRIOR = {
 			DEAD = "Good riddance!",
 			GENERIC = "Looks even meaner than usual.",
-			SLEEPING = "I should keep my distance.",
+			SLEEPING = "I should keep my distance."
 		},
 		SPOILED_FOOD = "It's a furry ball of rotten food.",
 		STATUEHARP = "What has happened to the head?",
@@ -1248,62 +1112,56 @@ return {
 		TALLBIRD = "That's a tall bird!",
 		TALLBIRDEGG = "Will it hatch?",
 		TALLBIRDEGG_COOKED = "Delicious and nutritional.",
-		TALLBIRDEGG_CRACKED =
-		{
+		TALLBIRDEGG_CRACKED = {
 			COLD = "Brrrr!",
 			GENERIC = "Looks like it's hatching.",
 			HOT = "Are eggs supposed to sweat?",
 			LONG = "I have a feeling this is going to take a while...",
-			SHORT = "It should hatch any time now.",
+			SHORT = "It should hatch any time now."
 		},
-		TALLBIRDNEST =
-		{
+		TALLBIRDNEST = {
 			GENERIC = "That's quite an egg!",
-			PICKED = "The nest is empty.",
+			PICKED = "The nest is empty."
 		},
-		TEENBIRD =
-		{
+		TEENBIRD = {
 			GENERIC = "Not a very tall bird.",
 			HUNGRY = "I'd better find it some food.",
-			STARVING = "It has a dangerous look in it's eye.",
+			STARVING = "It has a dangerous look in it's eye."
 		},
-		TELEBASE =	-- Duplicated
-		{
+		TELEBASE = {
+			-- Duplicated
 			VALID = "It's ready to go.",
-			GEMS = "It needs more purple gems.",
+			GEMS = "It needs more purple gems."
 		},
-		GEMSOCKET = -- Duplicated
-		{
+		GEMSOCKET = {
+			-- Duplicated
 			VALID = "Looks ready.",
-			GEMS = "It needs a gem.",
+			GEMS = "It needs a gem."
 		},
-		TELEPORTATO_BASE =
-		{
+		TELEPORTATO_BASE = {
 			ACTIVE = "With this I can surely pass through space and time!",
 			GENERIC = "This appears to be a nexus to another world!",
 			LOCKED = "There's still something missing.",
-			PARTIAL = "Soon, my invention will be complete!",
+			PARTIAL = "Soon, my invention will be complete!"
 		},
 		TELEPORTATO_BOX = "This may control the polarity of the whole universe.",
 		TELEPORTATO_CRANK = "Tough enough to handle the most intense experiments.",
 		TELEPORTATO_POTATO = "This metal potato contains great and fearful power...",
 		TELEPORTATO_RING = "A ring that could focus dimensional energies.",
 		TELESTAFF = "It can show me the world.",
-		TENT = 
-		{
+		TENT = {
 			GENERIC = "I get crazy when I don't sleep.",
-			BURNT = "Nothing left to sleep in.",
+			BURNT = "Nothing left to sleep in."
 		},
-		SIESTAHUT = 
-		{
+		SIESTAHUT = {
 			GENERIC = "A nice place for an afternoon rest out of the heat.",
-			BURNT = "It won't provide much shade now.",
+			BURNT = "It won't provide much shade now."
 		},
 		TENTACLE = "That looks dangerous.",
 		TENTACLESPIKE = "It's pointy and slimy.",
 		TENTACLESPOTS = "I think these were its genitalia.",
 		TENTACLE_PILLAR = "A slimy pole.",
-        TENTACLE_PILLAR_HOLE = "Seems stinky, but worth exploring.",
+		TENTACLE_PILLAR_HOLE = "Seems stinky, but worth exploring.",
 		TENTACLE_PILLAR_ARM = "Little slippery arms.",
 		TENTACLE_GARDEN = "Yet another slimy pole.",
 		TOPHAT = "What a nice hat.",
@@ -1312,14 +1170,12 @@ return {
 		TRAP = "I wove it real tight.",
 		TRAP_TEETH = "This is a nasty surprise.",
 		TRAP_TEETH_MAXWELL = "I'll want to avoid stepping on that!",
-		TREASURECHEST = 
-		{
+		TREASURECHEST = {
 			GENERIC = "It's my tickle trunk!",
-			BURNT = "That trunk was truncated.",
+			BURNT = "That trunk was truncated."
 		},
 		TREASURECHEST_TRAP = "How convenient!",
 		TREECLUMP = "It's almost like someone is trying to prevent me from going somewhere.",
-		
 		TRINKET_1 = "They are all melted together.", --Melty Marbles
 		TRINKET_2 = "It's just a cheap replica.", --Fake Kazoo
 		TRINKET_3 = "The knot is stuck. Forever.", --Gord's Knot
@@ -1347,60 +1203,55 @@ return {
 		TRINKET_25 = "It smells kind of stale.", -- Air Unfreshener
 		TRINKET_26 = "Food and a cup! The ultimate survival container.", -- Potato Cup
 		TRINKET_27 = "Good, I can hang my clothes up if I ever find a hook.", -- Wire Hanger
-		
 		TRUNKVEST_SUMMER = "Wilderness casual.",
 		TRUNKVEST_WINTER = "Winter survival gear.",
 		TRUNK_COOKED = "Somehow even more nasal than before.",
 		TRUNK_SUMMER = "A light breezy trunk.",
 		TRUNK_WINTER = "A thick, hairy trunk.",
 		TUMBLEWEED = "Who knows what that tumbleweed has picked up.",
-		TURF_CARPETFLOOR = "It's surprisingly scratchy.",	-- Duplicated
-		TURF_CHECKERFLOOR = "These are pretty snazzy.",	-- Duplicated
-		TURF_DIRT = "A chunk of ground.",	-- Duplicated
-		TURF_FOREST = "A chunk of ground.",	-- Duplicated
-		TURF_GRASS = "A chunk of ground.",	-- Duplicated
-		TURF_MARSH = "A chunk of ground.",	-- Duplicated
-		TURF_ROAD = "Hastily cobbled stones.",	-- Duplicated
-		TURF_ROCKY = "A chunk of ground.",	-- Duplicated
-		TURF_SAVANNA = "A chunk of ground.",	-- Duplicated
-		TURF_WOODFLOOR = "These are floorboards.",	-- Duplicated
+		TURF_CARPETFLOOR = "It's surprisingly scratchy.", -- Duplicated
+		TURF_CHECKERFLOOR = "These are pretty snazzy.", -- Duplicated
+		TURF_DIRT = "A chunk of ground.", -- Duplicated
+		TURF_FOREST = "A chunk of ground.", -- Duplicated
+		TURF_GRASS = "A chunk of ground.", -- Duplicated
+		TURF_MARSH = "A chunk of ground.", -- Duplicated
+		TURF_ROAD = "Hastily cobbled stones.", -- Duplicated
+		TURF_ROCKY = "A chunk of ground.", -- Duplicated
+		TURF_SAVANNA = "A chunk of ground.", -- Duplicated
+		TURF_WOODFLOOR = "These are floorboards.", -- Duplicated
 		TURKEYDINNER = "Mmmm.",
 		TWIGS = "It's a bunch of small twigs.",
 		UMBRELLA = "This will keep my hair dry, at least.",
 		GRASS_UMBRELLA = "This will keep my hair moderately dry, at least.",
 		UNIMPLEMENTED = "It doesn't look finished! It could be dangerous.",
 		WAFFLES = "I cooked it myself!",
-		WALL_HAY = 
-		{	
+		WALL_HAY = {
 			GENERIC = "Hmmmm. I guess that'll have to do.",
-			BURNT = "That won't do at all.",
+			BURNT = "That won't do at all."
 		},
 		WALL_HAY_ITEM = "This seems like a bad idea.",
 		WALL_STONE = "That's a nice wall.",
 		WALL_STONE_ITEM = "They make me feel so safe.",
 		WALL_RUINS = "An ancient piece of wall.",
 		WALL_RUINS_ITEM = "A solid piece of history.",
-		WALL_WOOD = 
-		{
+		WALL_WOOD = {
 			GENERIC = "Pointy!",
-			BURNT = "Burnt!",
+			BURNT = "Burnt!"
 		},
 		WALL_WOOD_ITEM = "Pickets!",
 		WALL_MOONROCK = "Spacey and smooth!",
 		WALL_MOONROCK_ITEM = "Very light but surprisingly tough.",
 		WALRUS = "Walruses are natural predators.",
 		WALRUSHAT = "It's covered with walrus hairs.",
-		WALRUS_CAMP =
-		{
+		WALRUS_CAMP = {
 			EMPTY = "Looks like somebody was camping here.",
-			GENERIC = "It looks warm and cozy inside.",
+			GENERIC = "It looks warm and cozy inside."
 		},
 		WALRUS_TUSK = "I'm sure I'll find a use for it eventually.",
-		WARDROBE = 
-		{
+		WARDROBE = {
 			GENERIC = "Maybe I can be even more handsome!",
-            BURNING = "That's burning fast!",
-			BURNT = "So long, style.",
+			BURNING = "That's burning fast!",
+			BURNT = "So long, style."
 		},
 		WARG = "You might be something to reckon with, big dog.",
 		WASPHIVE = "I think those bees are mad.",
@@ -1409,39 +1260,35 @@ return {
 		WATERMELONHAT = "Let the juice run down your face.",
 		WETGOOP = "I cooked it myself!",
 		WINTERHAT = "It'll be good for when winter comes.",
-		WINTEROMETER = 
-		{
+		WINTEROMETER = {
 			GENERIC = "I am one heck of a scientist.",
-			BURNT = "Its measuring days are over.",
+			BURNT = "Its measuring days are over."
 		},
-		WORMHOLE =
-		{
+		WORMHOLE = {
 			GENERIC = "Soft and undulating.",
-			OPEN = "Science compels me to jump in.",
+			OPEN = "Science compels me to jump in."
 		},
 		WORMHOLE_LIMITED = "Guh, that thing looks worse off than usual.",
-		ACCOMPLISHMENT_SHRINE = "I want to use it, and I want the world to know what I did.",        
+		ACCOMPLISHMENT_SHRINE = "I want to use it, and I want the world to know what I did.",
 		LIVINGTREE = "Is it watching me?",
 		ICESTAFF = "It's cold to the touch.",
 		REVIVER = "The beating of this hideous heart will bring a ghost back to life!",
 		LIFEINJECTOR = "Booooost!",
-		SKELETON_PLAYER =
-		{
+		SKELETON_PLAYER = {
 			MALE = "%s must've died performing an important experiment with %s.",
 			FEMALE = "%s must've died performing an important experiment with %s.",
 			ROBOT = "%s must've died performing an important experiment with %s.",
-			DEFAULT = "%s must've died performing an important experiment with %s.",
+			DEFAULT = "%s must've died performing an important experiment with %s."
 		},
 		HUMANMEAT = "Flesh is flesh. Where do I draw the line?",
 		HUMANMEAT_COOKED = "Cooked nice and pink, but still morally gray.",
 		HUMANMEAT_DRIED = "Letting it dry makes it not come from a human, right?",
-		MOONROCKNUGGET = "That rock came from the moon.",
+		MOONROCKNUGGET = "That rock came from the moon."
 	},
 	DESCRIBE_GENERIC = "It's a... thing.",
 	DESCRIBE_TOODARK = "It's too dark to see!",
 	DESCRIBE_SMOLDERING = "That thing is about to catch fire.",
-	EAT_FOOD =
-	{
-		TALLBIRDEGG_CRACKED = "Mmm. Beaky.",
-	},
+	EAT_FOOD = {
+		TALLBIRDEGG_CRACKED = "Mmm. Beaky."
+	}
 }

@@ -12,4 +12,4 @@ all_clients_require_mod = true
 icon_atlas = "modicon.xml"
 icon = "modicon.tex"
 
-server_filter_tags = { "character", }
+server_filter_tags = {"character"}
