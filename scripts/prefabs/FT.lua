@@ -22,14 +22,12 @@ end
 
 -- When loading or spawning the character
 local function onload(inst)
-	inst:ListenForEvent("ms_respawnedfromghost", onbecamehuman)
-	inst:ListenForEvent("ms_becameghost", onbecameghost)
-
-	if inst:HasTag("playerghost") then
-		onbecameghost(inst)
-	else
-		onbecamehuman(inst)
-	end
+	-- if inst:HasTag("playerghost") then
+	--     onbecameghost(inst)
+	-- else
+	--     onbecamehuman(inst)
+	-- end
+	-- 这几行没有必要，参看prefabs\player_common.lua:993
 end
 
 -- This initializes for both the server and client. Tags can be added here.
@@ -68,8 +66,13 @@ local master_postinit = function(inst)
 	-- resistance
 	inst.components.temperature.inherentinsulation = 100
 
+	inst:ListenForEvent("ms_respawnedfromghost", onbecamehuman)
+	inst:ListenForEvent("ms_becameghost", onbecameghost)
+
 	inst.OnLoad = onload
 	inst.OnNewSpawn = onload
 end
 
-return MakePlayerCharacter("FT", prefabs, assets, common_postinit, master_postinit, start_inv)
+return MakePlayerCharacter("ft", prefabs, assets, common_postinit, master_postinit, start_inv)
+
+-- 不支持大写prefab名，参见mainfunctions.lua:291

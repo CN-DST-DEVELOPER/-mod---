@@ -4,16 +4,16 @@ local assets = {
 }
 
 local skins = {
-	normal_skin = "FT",
+	normal_skin = "ft",
 	ghost_skin = "ghost_FT_build"
 }
 
-local base_prefab = "FT"
+local base_prefab = "ft"
 
 local tags = {"FT", "CHARACTER"}
 
 return CreatePrefabSkin(
-	"FT_none",
+	"ft_none",
 	{
 		base_prefab = base_prefab,
 		skins = skins,
